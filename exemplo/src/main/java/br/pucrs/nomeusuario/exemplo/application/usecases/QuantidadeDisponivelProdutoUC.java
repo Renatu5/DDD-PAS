@@ -9,11 +9,11 @@ public class QuantidadeDisponivelProdutoUC {
     private ServicoDeEstoque servicoEstoque;
 
     @Autowired
-    public QuantidadeDisponivelProdutoUC(ServicoDeEstoque servicoEstoque){
+    public QuantidadeDisponivelProdutoUC(ServicoDeEstoque servicoEstoque) {
         this.servicoEstoque = servicoEstoque;
     }
 
-    public int run(long idProduto){
+    public int run(long idProduto) {
         return servicoEstoque.qtdadeEmEstoque(idProduto);
     }
 }
